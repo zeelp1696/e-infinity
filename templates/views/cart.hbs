@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .cart-item div {
+            flex: 1;
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .quantity-btn {
+            padding: 5px;
+            cursor: pointer;
+            border: none;
+            background-color: #ddd;
+            border-radius: 3px;
+        }
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 20px;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            background-color: #ffcc00;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div id="cart-items"></div>
+    <p class="total">Total: ₹<span id="total-price">0.00</span></p>
+    <button class="checkout-btn" onclick="proceedToCheckout()" class="bg-green-600 text-white p-3 rounded-lg">Proceed to Checkout</button>
+
+
+    <script>
+        async function fetchCart() {
+            try {
+                const response = await fetch('/api/cart'); // Fetch cart items from backend
+                if (!response.ok) {
+                    throw new Error('Failed to fetch cart data');
+                }
+                const cartItems = await response.json();
+                renderCart(cartItems);
+            } catch (error) {
+                console.error("Error fetching cart items:", error);
+                document.getElementById("cart-items").innerHTML = "<p>Failed to load cart items.</p>";
+            }
+        }
+
+        function updateTotal(cartItems) {
+            let totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            document.getElementById("total-price").textContent = totalPrice.toFixed(2);
+        }
+
+        function renderCart(cartItems) {
+    const cartContainer = document.getElementById("cart-items");
+    cartContainer.innerHTML = "";
+
+    cartItems.forEach((item) => {
+        const cartItem = document.createElement("div");
+        cartItem.className = "cart-item";
+        cartItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <div>
+                <h2>${item.name}</h2>
+                <p>₹${(item.price * item.quantity).toFixed(2)}</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="updateQuantity('${item._id}', -1)">-</button>
+                    <span>${item.quantity}</span>
+                    <button class="quantity-btn" onclick="updateQuantity('${item._id}', 1)">+</button>
+                </div>
+                <button class="remove-btn" onclick="removeFromCart('${item._id}')">Remove</button>
+            </div>
+        `;
+        cartContainer.appendChild(cartItem);
+    });
+    updateTotal(cartItems);
+}
+
+
+        async function updateQuantity(productId, change) {
+             console.log("🛠 Sending request to update quantity of:", productId, "Change:", change); // Debugging
+    try {
+        const response = await fetch('/api/cart/update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ productId, change })
+        });
+
+        const data = await response.json();
+        if (!response.ok) {
+            throw new Error(data.message || "Failed to update cart item");
+        }
+
+        fetchCart(); // Reload cart after updating quantity
+    } catch (error) {
+        console.error("Error updating quantity:", error);
+        alert("Could not update item quantity.");
+    }
+}
+
+    async function removeFromCart(cartItemId) {
+    try {
+        const response = await fetch(`/api/cart/remove/${cartItemId}`, { method: "DELETE" });
+
+        if (!response.ok) {
+            throw new Error("Failed to remove item from cart");
+        }
+
+        console.log("✅ Item removed successfully");
+        fetchCart(); // Refresh the cart after removal
+    } catch (error) {
+        console.error("❌ Error removing item:", error);
+        alert("Could not remove item.");
+    }
+}
+
+        function proceedToCheckout() {
+        const totalAmount = document.getElementById("total-price").innerText; // Get the total from the element
+        console.log("💰 Setting total amount in localStorage:", totalAmount);
+        localStorage.setItem("totalAmount", totalAmount);
+        window.location.href = "/payment"; // Redirect to payment page
+    }
+
+
+        fetchCart(); // Load cart on page load
+    </script>
+</body>
+</html>

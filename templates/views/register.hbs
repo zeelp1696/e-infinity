@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Infinity</title>
+    <link rel="stylesheet" href="css/reg3.css">
+    <script src="js/reg3.js"></script>
+</head>
+<body>
+       
+    <!-- Page Container -->
+    <div class="register-container">
+        <!-- Brand Logo -->
+        <div class="brand">
+            <h1>Infinity<span></span></h1>
+            <p>Your Style, Your Way</p>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="registerForm" action="/register" method="post">
+            <h2>Create Your Account</h2>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="Fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="Password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Re-enter your password" required>
+            </div>
+            <div class="form-group terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+            </div>
+            <button type="submit" class="btnRegister" name="submit" value="Register">Register</button>
+            <p id="error-message"></p>
+            <p class="login-link">Already have an account? <a href="index">Login here</a></p>
+
+        </form>
+    </div>
+    
+
+</body>
+</html>

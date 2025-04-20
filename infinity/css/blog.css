@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #070303dd;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: linear-gradient(90deg, #080405cc, #020001ee);
+    color: #fff;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background: #333;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('pngtree-the-interior-of-a-clothing-store-with-clothing-on-display-picture-image_2654940.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #070505;
+}
+
+.content-section p {
+    margin-bottom: 10px;
+}
+
+.blog-post {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-post article {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.blog-post p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #0927ef;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/*header*/
+.detail{
+    border-bottom:1px solid rgb(143, 141, 141);
+    padding-top:15px;
+    width:100%;
+    height:30px;
+    display: flex;
+    font-family: "Marcellus SC", serif;
+    justify-content: space-between;
+    
+}
+#detail-left{
+    padding-left:35px;
+    display: flex;
+    font-family: "Marcellus SC", serif;
+    
+}
+#detail-left p{
+    font-size:12px;
+    align-items: center;
+    padding-bottom:5px;
+
+}
+#detail-right{
+    display: flex;
+    font-family: "Marcellus SC", serif;
+    padding-right:35px;
+
+}
+#detail-right button{
+    border:0px;
+    background-color: transparent;
+    padding-right:5px;
+    font-size: 16px;
+    padding-bottom:10px;
+}
+
+/*navbar*/
+.navbar{
+    cursor:default;
+    padding-top:10px;
+    width:100%;
+    height:50px;
+    display: flex;
+    justify-content:space-between ;
+}
+#nav-left{
+    padding-left:35px;
+    font-family: "Marcellus SC", serif;
+}
+#nav-right{
+width:600px;
+    padding-right:35px;
+    font-family:  serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category:hover{
+   
+    background-color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    animation: popup 0.3s ease-in;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  .login button{
+    font-family: "Marcellus SC", serif;
+    width:90px;
+    height:30px;
+    background-color: black;
+    color:white
+}

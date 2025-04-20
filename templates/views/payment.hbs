@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Razorpay script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Checkout</h2>
+        
+        <!-- Cart Summary -->
+        <div class="mb-4">
+            <h3 class="text-lg font-semibold">Cart Summary</h3>
+            <p class="text-gray-600">Total: ₹<span id="total-amount">0</span></p>
+        </div>
+        
+        <!-- Payment Method -->
+        <div class="mb-4">
+            <h3 class="text-lg font-semibold">Payment Method</h3>
+            <select id="payment-method" class="w-full p-2 border rounded text-gray-500">
+                <option value="" selected disabled>Select Payment Method</option>
+                <option value="cod">Cash on Delivery</option>
+                <option value="upi">UPI Payment</option>
+            </select>
+        </div>
+
+        <!-- COD Confirmation Box -->
+        <div id="cod" class="payment-option hidden bg-green-100 p-3 rounded-lg border border-green-400 mb-4">
+            <h3 class="text-lg font-semibold text-green-800">Cash on Delivery Selected</h3>
+            <p class="text-green-600">You will pay the total amount upon delivery.</p>
+        </div>
+
+        <!-- UPI -->
+        <div id="upi" class="payment-option hidden">
+            <h3 class="text-lg font-semibold">Enter UPI ID</h3>
+            <input type="text" id="upi-id" placeholder="username@upi" class="w-full p-2 border rounded mb-2">
+            <p class="text-sm text-gray-500 mb-2">Supported UPI Apps: Google Pay, PhonePe, Paytm, BHIM</p>
+        </div>
+        
+        <!-- Billing Details -->
+        <div id="billing-section" class="mb-4"> 
+            <h3 class="text-lg font-semibold">Billing Details</h3>
+            <input type="text" id="full-name" placeholder="Full Name" class="w-full p-2 border rounded mb-2">
+            <input type="text" id="address" placeholder="Address" class="w-full p-2 border rounded mb-2">
+            <input type="text" id="pincode" placeholder="Pincode" class="w-full p-2 border rounded mb-2">
+        </div>
+
+        <button id="place-order" class="w-full bg-blue-600 text-white p-3 rounded-lg mt-4">Place Order</button>
+    </div>
+    <script src="/js/payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,2321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Clothing Store</title>
+    <link rel="stylesheet" href="css/boys.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="company-name">Infinity</div>
+        <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#" class="pricebtn">Price</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/cart">Add to Cart</a></li>
+        </ul>
+    </nav>
+    <div class="priceRangeBox hidden">
+        <button class="priceclose">x</button>
+        <h2>Choose Your Price Range</h2><br>
+        <label>
+            <input type="radio" name="range" value="All" class="range"> All
+        </label><br>
+        <label>
+            <input type="radio" name="range" value="under20" class="range"> $0 - $20
+        </label><br>
+        <label>
+            <input type="radio" name="range" value="under30" class="range"> $20 - $30
+        </label><br>
+        <label>
+            <input type="radio" name="range" value="above30" class="range"> above $30
+        </label><br><br><br>
+        <button class="filterbtn" value="click me">Filter Products</button>
+    </div>
+    <div class="main-container">
+        <!-- Sidebar (20%) -->
+        <aside class="sidebar">
+            <h2
+                style="border-bottom: 1px solid black; width:100%; margin-bottom: 40px;padding-bottom: 20px; text-align: center;">
+                Category</h2>
+            <ul>
+                <li class="Trending"><a href="#">Trending</a></li>
+                <li class="man"><a href="#">Man</a></li>
+                <li class="woman"><a href="#">Woman</a></li>
+                <li class="kids"><a href="#">Kids</a></li>
+                <li class="jeans"><a href="#">Jeans</a></li>
+                <li class="cargos"><a href="#">cargos</a></li>
+                <li class="formal"><a href="#">formal</a></li>
+
+
+                <!-- Add more categories here -->
+            </ul>
+        </aside>
+        <div class="allproducts">
+            <!-- Main Content (80%) -->
+            <!--trending-->
+            <section class="trending-list">
+
+
+                <!-- Product 1 -->
+                <div class="product-box">
+                    <img src="pic/man1 (13).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Dapper Duo: Complete Men's Outfit Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This stylish men's outfit features a crisp, tailored shirt that exudes
+                            sophistication, paired with well-fitted pants for a polished look. Complementing the
+                            ensemble
+                            are sleek shoes that provide both comfort and elegance, while a classic watch adds a touch
+                            of
+                            refinement.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacad6">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-box">
+                    <img src="pic/1bf7c38edc982f5a47ccac621c416caa.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Hat & Tee Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$49</p>
+                        </div>
+                        <p class="description">This stylish image features a man confidently sporting a fashionable hat
+                            paired with a casual t-shirt, embodying a relaxed yet trendy aesthetic. The combination of
+                            accessories and attire highlights versatility, making it suitable for various occasions,
+                            from
+                            outdoor gatherings to casual outings.</p>
+                        <button class="add-to-cart"  data-id="67b2034d3888427d35aacad7">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-box">
+                    <img src="pic/trending (0).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Verdant Elegance Jumpsuit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$27</p>
+                        </div>
+                        <p class="description">This stylish two-piece jumpsuit features a contemporary design, combining
+                            a
+                            crisp white shirt with vibrant green accents. The ensemble offers a perfect blend of comfort
+                            and
+                            sophistication, making it suitable for both casual outings and more formal occasions.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacad8">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-box">
+                    <img src="pic/trending (1).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Whimsical Garden Attire</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$24</p>
+                        </div>
+                        <p class="description">This charming outfit features a delightful combination of green and pink,
+                            perfectly suited for a little girl. The ensemble includes a stylish top adorned with playful
+                            patterns, complemented by a comfortable pair of pants or a skirt that allows for easy
+                            movement.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacad9">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-box">
+                    <img src="pic/trending (2).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Chic Steps: Brown Pants Edition"</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$28</p>
+                        </div>
+                        <p class="description">This stylish outfit features a young girl dressed in brown pants paired
+                            with
+                            pristine white shoes, creating a fresh and modern look. The combination of earthy tones and
+                            bright footwear adds a playful yet sophisticated touch, making it suitable for various
+                            casual
+                            occasions</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacada">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-box">
+                    <img src="pic/trending (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Tender Moments: Little Dreamer Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$39</p>
+                        </div>
+                        <p class="description">This charming image features a little girl dressed in a pristine white
+                            outfit, exuding innocence and joy. She is gently holding a soft stuffed animal, which adds a
+                            touch of warmth and comfort to the scene.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacadb">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-box">
+                    <img src="pic/trending (4).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Radiant White Attire</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$34</p>
+                        </div>
+                        <p class="description">This elegant outfit features a woman dressed in a pristine white coat
+                            paired
+                            with matching white pants, exuding sophistication and modernity. The ensemble is perfect for
+                            both professional and casual settings, showcasing a clean and polished aesthetic</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacadc">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-box">
+                    <img src="pic/trending (5).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Sophisticated Style Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$36</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a woman confidently wearing a chic black
+                            coat
+                            paired with fashionable plaid pants. The coat's sleek design complements the contemporary
+                            pattern of the pants, creating a sophisticated yet casual look suitable for various
+                            occasions
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacadd">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-box">
+                    <img src="pic/trending (6).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Cozy Capture Selfie Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$47</p>
+                        </div>
+                        <p class="description">Capture your best moments with our stylish bedroom selfie setup, perfect
+                            for
+                            those who love to share their life on social media. This image features a woman confidently
+                            taking a selfie in her beautifully decorated bedroom, showcasing a cozy and inviting
+                            atmosphere
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacade">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-box">
+                    <img src="pic/trending (7).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Urban Elegance Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15</p>
+                        </div>
+                        <p class="description">Elevate your wardrobe with this sophisticated beige suit, perfect for the
+                            modern woman on the go. Designed for both style and comfort, this tailored ensemble features
+                            a
+                            sleek silhouette that flatters all body types</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacadf">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-box">
+                    <img src="pic/trending (8).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Modern Minimalist Outfit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$10.99</p>
+                        </div>
+                        <p class="description">Elevate your casual style with this versatile outfit featuring a man in a
+                            white hoodie layered under a chic beige vest. The combination offers a perfect blend of
+                            comfort
+                            and sophistication, making it ideal for both relaxed outings and urban adventures.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae0">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-box">
+                    <img src="pic/trending (9).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Streetwise Style Series</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$37</p>
+                        </div>
+                        <p class="description">This striking image features a man casually seated on a ledge, exuding a
+                            relaxed yet stylish vibe. Dressed in a trendy hat and comfortable sneakers, he embodies a
+                            modern
+                            aesthetic that appeals to urban fashion enthusiasts.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae1">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 13 -->
+                <div class="product-box">
+                    <img src="pic/trending (11).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Green Cargo Style</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$48.99</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a man confidently dressed in a vibrant
+                            green
+                            sweatshirt paired with durable cargo pants, perfect for both casual outings and outdoor
+                            adventures.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae2">Add to Cart</button>
+                    </div>
+            </section>
+
+            <!--man-->
+            <section class="product-list">
+                <!-- Product 1 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/man1 (1).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Sleek Streetwear Set</h3><br>
+                            <p class="rating">Rating: ★★★★☆</p>
+                            <p class="price">$19.99</p>
+                        </div>
+                        <p class="description"> Elevate your casual style with this chic outfit featuring a crisp white
+                            jacket, sleek grey pants, and trendy sneakers. Perfect for a day out or a relaxed gathering,
+                            this ensemble combines comfort and sophistication effortlessly.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae3">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (15).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Chill Vibes Sweater</h3><br>
+
+                            <p class="rating">Rating: ★★★★☆</p>
+                            <p class="price">$25.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man confidently sporting a classic white
+                            sweater paired with versatile jeans. The clean lines of the sweater create a fresh and
+                            modern
+                            look, while the jeans add a casual yet polished touch.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae4">Add to Cart</button>
+
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Universal Threads T-Shirt</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$29.99</p>
+                        </div>
+                        <p class="description"> Embrace a sense of connection with our stylish t-shirt featuring the
+                            word
+                            "Universal." Perfect for casual outings or lounging at home, this comfortable tee is
+                            designed
+                            for those who appreciate a blend of simplicity and meaning. Made from soft, breathable
+                            fabric,
+                            it offers a relaxed fit that suits any body type, making it a versatile addition to your
+                            wardrobe.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae5">Add to Cart</button>
+
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/man1 (4).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3> Green Leisurewear Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$18.99</p>
+                        </div>
+                        <p class="description"> Embrace casual comfort with this stylish green t-shirt and shorts
+                            ensemble,
+                            perfect for warm days and relaxed outings. The vibrant green hue adds a pop of color, while
+                            the
+                            lightweight fabric ensures breathability and ease of movement. Ideal for everything from a
+                            day
+                            at the park to a casual hangout with friends, this outfit combines functionality with a
+                            laid-back vibe.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae6">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-box above30">
+                    <img src="pic/man1 (5).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3> Navy & Khaki Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★★★</p>
+                            <p class="price">$32.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man dressed in a navy shirt paired with
+                            khaki
+                            pants, exemplifying a classic and versatile look suitable for various occasions. The navy
+                            shirt
+                            offers a sophisticated touch, while the khaki pants provide a comfortable and relaxed fit,
+                            making it an ideal choice for both casual outings and semi-formal events. This combination
+                            not
+                            only highlights a sense of fashion but also ensures ease of movement and comfort throughout
+                            the
+                            day.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae7">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (6).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Grey Radiance Tee</h3><br>
+
+                            <p class="rating">Rating: ★★★★☆</p>
+                            <p class="price">$22.49</p>
+                        </div>
+                        <p class="description">Elevate your casual wardrobe with this stylish grey t-shirt featuring
+                            vibrant
+                            yellow lettering. Perfect for making a statement, this comfortable tee is ideal for everyday
+                            wear or a laid-back outing. Its soft fabric ensures a great fit, while the eye-catching
+                            design
+                            adds a pop of color to any outfit.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae8">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/man1 (7).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Focused Attire: Black T-Shirt Edition</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">Elevate your casual wardrobe with this stylish black t-shirt featuring
+                            the
+                            bold word "FOCUS" printed prominently on the front. Perfect for those who appreciate a blend
+                            of
+                            comfort and motivation, this shirt is ideal for workouts, lounging, or making a statement.
+                            Made
+                            from soft, breathable fabric, it ensures a great fit and feel, making it a versatile
+                            addition to
+                            any outfit.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity
+
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacae9">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8-->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (8).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Classic Contrast Attire</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$26.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a classic white shirt paired with sleek
+                            black
+                            pants, perfect for any occasion. The crisp white shirt adds a touch of sophistication, while
+                            the
+                            black pants keep it modern and versatile. Whether you're heading to the office or out for a
+                            casual dinner, this look is effortlessly chic and comfortable.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity
+
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaea">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/man1 (9).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Casual Venture Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a man confidently wearing a brown jacket
+                            paired with crisp white sneakers. The jacket's rich hue adds a touch of sophistication,
+                            while
+                            the sneakers provide a modern, casual flair. Perfect for a variety of occasions, this look
+                            effortlessly blends comfort and style, making it an ideal choice for both day and evening
+                            outings.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaeb">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/man1 (10).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Casual Venture Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a man confidently wearing a brown jacket
+                            layered over a classic black sweater. The combination of earthy tones and sleek black
+                            creates a
+                            versatile look suitable for both casual outings and more formal occasions.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaec">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (11).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Effortless Style Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$25.99</p>
+                        </div>
+                        <p class="description"> Elevate your casual wardrobe with this stylish ensemble featuring a cozy
+                            white sweater, classic jeans, and trendy sneakers. Perfect for a laid-back day out or a
+                            relaxed
+                            evening at home, this outfit combines comfort and fashion effortlessly. The soft texture of
+                            the
+                            sweater complements the timeless appeal of the jeans, while the sneakers add a modern touch,
+                            making it an ideal choice for any casual occasion.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaed">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-box above30">
+                    <img src="pic/man1 (12).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Grey Milano Style Top
+                            </h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$35.99</p>
+                        </div>
+                        <p class="description">Check out this stylish grey shirt featuring "Milano" emblazoned across
+                            the
+                            front. Perfect for casual outings or a laid-back day at home, it adds a touch of urban flair
+                            to
+                            any wardrobe. The comfortable fit and trendy design make it a must-have for anyone looking
+                            to
+                            showcase their love for the fashion capital of Italy.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaee">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (13).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Dapper Duo: Complete Men's Outfit Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$21.99</p>
+                        </div>
+                        <p class="description">This stylish men's outfit features a crisp, tailored shirt that exudes
+                            sophistication, paired with well-fitted pants for a polished look.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaef">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/man1 (14).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Shearling Luxe Brown Jacket</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$12.99</p>
+                        </div>
+                        <p class="description">This men's brown jacket features a luxurious shearling collar, combining
+                            style and comfort effortlessly. Crafted from high-quality materials, it offers warmth and
+                            durability, making it an ideal choice for both casual outings and more formal
+                            occasions.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf0">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/man1 (19).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Chill Vibes Sweater
+                            </h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$19.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man confidently sporting a classic white
+                            sweater paired with versatile jeans. The clean lines of the sweater create a fresh and
+                            modern
+                            look, while the jeans add a casual yet polished touch.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf1">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 16 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (16).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Blue Horizon Casuals</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$27.99</p>
+                        </div>
+                        <p class="description">This fashionable ensemble showcases a man confidently donning a sharp
+                            blue
+                            shirt alongside comfortable khaki pants. The bright blue hue injects a splash of color,
+                            making
+                            it suitable for casual outings as well as semi-formal occasions.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf2">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 17-->
+                <div class="product-box above30">
+                    <img src="pic/man1 (17).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>XOXO Vibe Tee</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$40.99</p>
+                        </div>
+                        <p class="description"> Embrace a cozy yet stylish vibe with our brown tee shirt featuring the
+                            playful word "xoxo." Perfect for casual outings or lounging at home, this shirt combines
+                            comfort
+                            with a touch of love.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf3">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 18 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/man1 (18).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>FloorStyle Duo
+                            </h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$29.99</p>
+                        </div>
+                        <p class="description"> Discover the perfect blend of comfort and style with this casual
+                            ensemble
+                            featuring a pair of trendy sneakers and a cozy sweater. Ideal for laid-back days or casual
+                            outings, this combination offers versatility and ease, making it a must-have addition to
+                            your
+                            wardrobe.<br><br>
+                            Material: cotton<br>
+                            brand: Infinity</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf4">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Repeat for more products... -->
+                <!-- Product 8 to Product 15 -->
+            </section>
+
+
+            <!-- Repeat for woman products... -->
+            <section class="woman-list">
+
+
+                <!-- Product 1 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/woman.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Chic Contrast Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$27</p>
+                        </div>
+                        <p class="description">This striking red dress features bold black and white stripes, creating a
+                            dynamic visual contrast that is both modern and chic. The dress is designed to flatter the
+                            figure, making it suitable for various occasions, from casual outings to more formal events.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/woman1.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Monochrome Elegance Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$13</p>
+                        </div>
+                        <p class="description">This elegant black and white sweater and pants set offers a sophisticated
+                            yet
+                            comfortable look, perfect for both casual outings and relaxed home wear. The contrasting
+                            colors
+                            create a timeless aesthetic, while the soft fabric ensures all-day comfort. The sweater
+                            features
+                            a classic design with a flattering fit, complemented by matching pants that provide a
+                            seamless
+                            silhouette.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf6">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/woman2.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Modern Streetwear Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$17.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a comfortable blue sweatshirt paired with
+                            sleek
+                            black pants, creating a perfect blend of casual and contemporary fashion. The ensemble is
+                            completed with trendy sneakers, making it ideal for both relaxed outings and active days.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf7">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/woman3.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Classic Comfort Activewear Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$12.89</p>
+                        </div>
+                        <p class="description">This stylish white hoodie and pants set offers a perfect blend of comfort
+                            and
+                            contemporary fashion.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf8">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-box above30">
+                    <img src="pic/woman4.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>ZenWear: Iconic Japanese Character Hoodie</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$48</p>
+                        </div>
+                        <p class="description">This stylish white hoodie and pants set offers a perfect blend of comfort
+                            and
+                            contemporary fashion. Crafted from high-quality materials, the hoodie features a relaxed fit
+                            with a cozy interior, while the matching pants provide a sleek silhouette that enhances
+                            mobility. Paired with trendy sneakers, this ensemble is ideal for casual outings or lounging
+                            at
+                            home, making it a versatile addition to any wardrobe. Elevate your everyday look with this
+                            chic
+                            and comfortable set.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaf9">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/woman (2).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Everyday Essentials Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$26</p>
+                        </div>
+                        <p class="description">1. This casual ensemble features a stylish grey sweater paired with
+                            classic
+                            jeans and comfortable sneakers, all artfully arranged on a bed. The soft texture of the
+                            sweater
+                            complements the relaxed fit of the jeans, making it an ideal outfit for both lounging at
+                            home
+                            and stepping out. The sneakers add a touch of sporty flair, ensuring versatility and comfort
+                            for
+                            any occasion.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacafa">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/woman (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Pure Style Tracksuit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$12.99</p>
+                        </div>
+                        <p class="description">1. Elevate your casual wardrobe with this stylish white hoodie and pants
+                            set,
+                            designed for comfort and versatility. The soft fabric ensures a cozy fit, while the matching
+                            sneakers complete the look, making it perfect for both lounging and on-the-go activities.
+                            Ideal
+                            for any season, this ensemble combines effortless style with practicality, allowing you to
+                            express your fashion sense with ease.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacafb">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-box above30">
+                    <img src="pic/woman (4).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Kawaii Kanji Sweatshir</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$45.7</p>
+                        </div>
+                        <p class="description">Elevate your casual wardrobe with this stylish sweatshirt featuring a
+                            striking image of a Japanese character. Crafted from high-quality materials, it offers both
+                            comfort and durability, making it perfect for everyday wear</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacafc">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-box above30">
+                    <img src="pic/woman (5).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Little Explorer Denim Suit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$36</p>
+                        </div>
+                        <p class="description">This stylish denim jumpsuit is perfect for young girls who love to
+                            combine
+                            comfort with fashion. Crafted from high-quality denim, it features a classic design with
+                            adjustable straps and a relaxed fit, allowing for easy movement and play.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacafd">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/woman (6).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Casual Chic Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$27</p>
+                        </div>
+                        <p class="description">This stylish outfit features a comfortable sweatshirt paired with
+                            matching
+                            pants, perfect for casual outings or lounging at home. The soft fabric ensures all-day
+                            comfort,
+                            while the trendy design adds a modern touch to any wardrobe. Ideal for layering or wearing
+                            on
+                            its own, this ensemble is versatile and suitable for various occasions.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacafe">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/woman1.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3> Monochrome Elegance Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">Elevate your wardrobe with this chic black and white sweater and pants
+                            set,
+                            designed for both comfort and style. The soft, breathable fabric ensures all-day wear, while
+                            the
+                            timeless color combination adds a sophisticated touch to any outfit. Perfect for casual
+                            outings
+                            or cozy nights in, this versatile set is a must-have addition to your collection.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacaff">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <!--kids-->
+
+            <section class="kids-list">
+
+
+                <!-- Product 1 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/kid.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Little Dreamer Outfit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This charming image features a little girl radiating joy and style,
+                            dressed
+                            in a playful black hat that adds a touch of whimsy to her outfit. Her crisp white pants
+                            create a
+                            delightful contrast, making her stand out in any setting. Perfect for capturing the essence
+                            of
+                            childhood fun and fashion, this image is sure to bring a smile to anyone's face</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb00">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-box above30">
+                    <img src="pic/kids (1).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Tiny Trendsetter Set.</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$32</p>
+                        </div>
+                        <p class="description">This adorable baby boy's tie dye shirt and shorts set is perfect for
+                            keeping
+                            your little one stylish and comfortable. Made from soft, breathable fabric, the vibrant
+                            colors
+                            and playful patterns are sure to brighten up any day. Ideal for playdates or family outings,
+                            this outfit combines fun and functionality, making it a must-have for your baby's wardrobe.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb01">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/kids (2).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Perfectly Styled Baby</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$25</p>
+                        </div>
+                        <p class="description">This adorable baby boy's outfit features the word "Perfect" boldly
+                            printed on
+                            it, making it a charming choice for your little one. Crafted from soft, breathable fabric,
+                            it
+                            ensures comfort while keeping your baby stylish. Perfect for playdates or family gatherings,
+                            this outfit is a must-have for any trendy baby wardrobe.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb02">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-box above30">
+                    <img src="pic/kids (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Woodland Wanderer</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$50</p>
+                        </div>
+                        <p class="description">1. Check out this adorable image of a young boy rocking a cozy brown
+                            sweater
+                            and jeans as he strolls along a charming wooden path. Perfect for capturing the essence of
+                            childhood adventure, this scene radiates warmth and a sense of exploration. Ideal for any
+                            project that celebrates the joys of being a kid!</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb03">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-box above30">
+                    <img src="pic/kids (4).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>DinoDreams Baby Romper Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$42</p>
+                        </div>
+                        <p class="description">This adorable baby's green dinosaur romper features a playful design
+                            complete
+                            with a cozy hoodie and matching shoes, perfect for keeping your little one comfortable and
+                            stylish. Made from soft, breathable fabric, it ensures all-day wearability while the vibrant
+                            dinosaur print adds a fun touch to any outfit. Ideal for playdates or casual outings, this
+                            romper is a must-have for any trendy baby wardrobe.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb04">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-box above30">
+                    <img src="pic/kids (5).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Cherished Threads Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$46</p>
+                        </div>
+                        <p class="description">1. This charming image features a woman gracefully holding a baby's
+                            clothes
+                            on a hanger, showcasing the delicate and adorable nature of infant apparel. The soft colors
+                            and
+                            gentle fabric evoke a sense of warmth and care, making it perfect for highlighting the joy
+                            of
+                            parenthood and the anticipation of welcoming a new life. Ideal for marketing baby clothing
+                            lines
+                            or parenting resources, this visual captures the essence of nurturing and love associated
+                            with
+                            caring for a newborn..</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb05">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/kids (6).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>CuddleCub Hooded Romper</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$7</p>
+                        </div>
+                        <p class="description">This adorable baby bear romper features a cozy hood adorned with cute
+                            ears,
+                            perfect for keeping your little one warm and stylish. Made from soft, breathable fabric, it
+                            ensures comfort for all-day wear. The playful design is ideal for both playtime and naptime,
+                            making it a versatile addition to your baby's wardrobe. Easy to put on and take off, this
+                            romper
+                            is a delightful choice for any occasion.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb06">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/kids (7).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Teddy Bear Comfort Wear</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15</p>
+                        </div>
+                        <p class="description">1. Embrace comfort and style with our cozy white teddy bear sweater and
+                            pants
+                            set, perfect for lounging or casual outings. The soft, plush fabric provides warmth and a
+                            luxurious feel, while the relaxed fit ensures all-day comfort. Ideal for layering or wearing
+                            on
+                            its own, this ensemble is a must-have addition to your wardrobe for a chic yet laid-back
+                            look.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb07">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/kids (8).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Cuddly Cub Outfit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$29</p>
+                        </div>
+                        <p class="description">This adorable child's shirt and shorts set features a charming bear
+                            design,
+                            perfect for playful days. Made from soft, breathable fabric, it ensures comfort and ease of
+                            movement for active little ones. The vibrant colors and cute graphics make it an ideal
+                            outfit
+                            for both casual outings and playdates, while the durable construction guarantees it can
+                            withstand all the adventures your child embarks on.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb08">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/kids (9).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Little Explorer Outfit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$16</p>
+                        </div>
+                        <p class="description">1. Dress your little guy in style with this adorable baby boy's t-shirt
+                            and
+                            shorts set! Made from soft, breathable fabric, it ensures all-day comfort while he plays and
+                            explores. The cute design is perfect for any casual outing, making it a must-have for his
+                            wardrobe. Easy to mix and match, this set is both practical and trendy.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb09">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/kids (10).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Urban Teddy Style</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$28</p>
+                        </div>
+                        <p class="description">1. Meet your new cuddly companion! This adorable teddy bear is dressed in
+                            a
+                            stylish black shirt and shorts, perfect for any adventure. Soft and huggable, it's great for
+                            kids and adults alike, making it a fantastic gift or a cozy addition to your collection.
+                            Snuggle
+                            up with this trendy bear and let the good times roll.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb0a">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-box above30">
+                    <img src="pic/kids.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Dapper Kid Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$33</p>
+                        </div>
+                        <p class="description">This stylish young boy is ready to steal the spotlight in his sharp suit
+                            and
+                            trendy sunglasses. Perfect for any special occasion, he exudes confidence and charm, making
+                            him
+                            the center of attention wherever he goes. Whether it's a wedding, party, or family
+                            gathering,
+                            this outfit is sure to impress and showcase his unique personality.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb0b">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 13 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/kid.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3> Monochrome Charm Outfit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$9.99</p>
+                        </div>
+                        <p class="description">This adorable little girl is rocking a stylish black hat paired with
+                            crisp
+                            white pants, creating a fun and trendy look. Perfect for sunny days or playful outings, her
+                            outfit is both chic and comfortable, making it ideal for any little fashionista. The black
+                            hat
+                            adds a touch of flair, while the white pants keep it fresh and bright.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb0c">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 14 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/kuds.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>2. Cozy Chic Tracksuit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$28.99</p>
+                        </div>
+                        <p class="description">This adorable little girl is rocking a cozy brown velvet tracksuit that’s
+                            perfect for playtime or lounging around. The soft fabric not only looks stylish but also
+                            keeps
+                            her comfortable all day long. With its rich color and trendy design, this tracksuit is a
+                            must-have for any young fashionista. Ideal for both indoor fun and outdoor adventures, it’s
+                            a
+                            versatile addition to her wardrobe.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb0d">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 15 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/kids3 (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Little Giraffe Explorer Overalls</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$23.99</p>
+                        </div>
+                        <p class="description">This adorable baby boy giraffe overalls set is perfect for your little
+                            one’s
+                            wardrobe! Made from soft, breathable fabric, it features cute giraffe prints that add a
+                            playful
+                            touch. The adjustable straps ensure a comfy fit, while the easy snap closures make diaper
+                            changes a breeze. Ideal for playdates or family outings, this outfit combines style and
+                            comfort
+                            effortlessly. Your baby will look absolutely charming in this delightful ensemble!</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb0e">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 16 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/kids3 (1).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3> BrightSky Adventurer</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$18.99</p>
+                        </div>
+                        <p class="description">This cool young boy is rocking a stylish pair of sunglasses and a trendy
+                            hat,
+                            perfect for sunny days. His laid-back vibe and playful spirit shine through, making him the
+                            ultimate summer accessory. Whether he's at the beach or just hanging out, this look is all
+                            about
+                            fun and carefree adventures.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb0f">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 17 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/kids3 (2).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Little Explorer Blue & White Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15</p>
+                        </div>
+                        <p class="description"> Dress your little guy in this adorable blue and white t-shirt and shorts
+                            set! Perfect for playdates or family outings, the soft fabric ensures all-day comfort while
+                            the
+                            cute design keeps him looking stylish. Easy to mix and match, this outfit is a must-have for
+                            any
+                            baby boy's wardrobe.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb10">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 18 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/kids3 (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Little Giraffe Explorer Overalls</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$25.99</p>
+                        </div>
+                        <p class="description">This adorable baby boy giraffe overalls set is perfect for your little
+                            one’s
+                            wardrobe! Made from soft, breathable fabric, it features cute giraffe prints that add a
+                            playful
+                            touch. The adjustable straps ensure a comfy fit, while the easy snap closures make diaper
+                            changes a breeze. Ideal for playdates or family outings, this outfit combines style and
+                            comfort
+                            effortlessly. Your baby will look absolutely charming in this delightful ensemble</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb11">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--cargos-->
+            <section class="cargo-list">
+
+
+                <!-- Product 1 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/cargo.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Street Style Essentials</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$19</p>
+                        </div>
+                        <p class="description">1. Check out this stylish look featuring a man rocking a comfy white
+                            hoodie
+                            paired with trendy cargo pants. Perfect for a casual day out or lounging at home, this
+                            outfit
+                            combines comfort and style effortlessly. The versatile white hoodie adds a fresh touch,
+                            while
+                            the cargo pants bring a laid-back vibe, making it a go-to choice for any occasion.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb12">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/cargo1.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>PocketEase Trousers</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$23</p>
+                        </div>
+                        <p class="description">These stylish pants feature a convenient side pocket, perfect for keeping
+                            your essentials close at hand. Made from comfortable fabric, they offer a relaxed fit that’s
+                            great for both casual outings and lounging at home. The side pocket adds a practical touch,
+                            making it easy to store your phone or keys while on the go. Upgrade your wardrobe with these
+                            versatile pants that blend functionality and style effortlessly..</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb13">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/cargo2.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Utility Side Pants</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$29.33</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man rocking a classic black shirt paired
+                            with
+                            comfortable jeans, perfect for a casual day out or a laid-back evening. The black shirt adds
+                            a
+                            touch of sophistication, while the jeans keep it relaxed and versatile. Ideal for any
+                            occasion,
+                            this look effortlessly combines comfort and style.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb14">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-box above30">
+                    <img src="pic/cargo3.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3> Denim Utility: Pockets for Every Occasion</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$36</p>
+                        </div>
+                        <p class="description">Check out these stylish jeans that are perfect for any casual outing!
+                            Designed with practical pockets, they offer both comfort and functionality. Whether you're
+                            running errands or hanging out with friends, these jeans will keep you looking sharp and
+                            feeling
+                            great.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb15">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-box above30">
+                    <img src="pic/cargo4.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>RivetEdge Denim</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$37</p>
+                        </div>
+                        <p class="description">1. Check out these stylish jeans featuring unique rivets on the side,
+                            adding
+                            a touch of edge to your casual look. Perfect for dressing up or down, they offer both
+                            comfort
+                            and flair, making them a must-have in your wardrobe. Whether you're hitting the town or just
+                            hanging out, these jeans will keep you looking effortlessly cool.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb16">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-box above30">
+                    <img src="pic/cargo5.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Sunshine Adventure Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$40.99</p>
+                        </div>
+                        <p class="description">1. Check out this adorable outfit featuring a young boy rocking brown
+                            cargo
+                            pants paired with a bright yellow sweater. The cargo pants offer a cool, casual vibe with
+                            plenty
+                            of pockets for all his little treasures, while the cheerful yellow sweater adds a pop of
+                            color
+                            that's perfect for any playful adventure. Ideal for everyday wear, this combo is both
+                            stylish
+                            and comfortable, making it a must-have for any young trendsetter!</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb17">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/jeans.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Versatile Zip Pocket Cargo Pants</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$18.99</p>
+                        </div>
+                        <p class="description">Upgrade your wardrobe with these stylish men's cargo pants, designed for
+                            both
+                            comfort and functionality. Featuring multiple zippers and spacious pockets, they offer
+                            plenty of
+                            storage for your essentials while keeping you looking sharp. Perfect for casual outings or
+                            outdoor adventures, these pants combine practicality with a modern edge.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb18">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/cargo (2).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Streetwise Hoodie & Cargo Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$14.99</p>
+                        </div>
+                        <p class="description">Check out this stylish outfit featuring a man rocking a comfy hoodie
+                            paired
+                            with versatile cargo pants. Perfect for a laid-back day out or just chilling at home, this
+                            look
+                            combines comfort and practicality effortlessly. The hoodie offers a cozy vibe, while the
+                            cargo
+                            pants add a trendy edge with their multiple pockets. Ideal for anyone looking to blend style
+                            with functionality!</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb19">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/cargo (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Everyday Essential: Pocketed Denim Wear</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$29.99</p>
+                        </div>
+                        <p class="description">Check out these stylish jeans that are perfect for any casual outing!
+                            Designed with practical pockets, they offer both comfort and functionality. Whether you're
+                            running errands or hanging out with friends, these jeans will keep you looking sharp and
+                            feeling
+                            great.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb1a">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/cargo (4).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>EdgeRivet Trousers</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$26.49</p>
+                        </div>
+                        <p class="description">Check out these stylish jeans featuring unique rivets on the side, adding
+                            a
+                            touch of edge to your casual look. Perfect for dressing up or down, they offer both comfort
+                            and
+                            flair, making them a must-have in your wardrobe. Whether you're hitting the town or just
+                            hanging
+                            out, these jeans will keep you looking effortlessly cool.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb1b">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/cargo (5).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Bright Explorer Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$14.49</p>
+                        </div>
+                        <p class="description">This charming outfit features a young boy dressed in stylish brown cargo
+                            pants paired with a vibrant yellow sweater. The cargo pants offer both comfort and
+                            practicality,
+                            perfect for active play, while the bright sweater adds a cheerful touch to his look</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb1c">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/cargo (6).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Khaki Comfort Pants</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$27.69</p>
+                        </div>
+                        <p class="description">Discover the perfect blend of comfort and style with our men's khaki
+                            pants,
+                            designed for versatility in any setting. Crafted from high-quality fabric, these pants offer
+                            a
+                            relaxed fit that ensures all-day wearability, making them ideal for both casual outings and
+                            more
+                            polished occasions. </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb1d">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 13 -->
+                <div class="product-box above30">
+                    <img src="pic/cargo (7).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Street Style Essentials</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$39.99</p>
+                        </div>
+                        <p class="description">Elevate your casual style with our versatile cargo pants, designed for
+                            comfort and functionality. Perfectly paired with sleek white sneakers, this outfit embodies
+                            a
+                            modern, laid-back aesthetic suitable for various occasions.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb1e">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 14 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/cargo (8).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>SidePocket Denim</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">Check out these stylish jeans featuring convenient side pockets, perfect
+                            for
+                            keeping your essentials close while looking effortlessly cool. Made with a comfortable fit,
+                            they’re ideal for any casual outing or laid-back day at home.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb1f">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 15 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/cargo (9).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Cargo Comfort Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$21.99</p>
+                        </div>
+                        <p class="description">Check out this stylish look featuring a man rocking cargo pants and
+                            sneakers!
+                            Perfect for a casual day out or running errands, these cargo pants offer both comfort and
+                            functionality with their multiple pockets</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb20">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 16 -->
+                <div class="product-box above30">
+                    <img src="pic/cargo.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Urban Chill Gear</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$36.50</p>
+                        </div>
+                        <p class="description">Short product description goes here.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb21">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 17 -->
+                <div class="product-box above30">
+                    <img src="pic/cargo1.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Chic Utility Slacks</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$32.19</p>
+                        </div>
+                        <p class="description">Check out these stylish pants featuring a convenient side pocket, perfect
+                            for
+                            keeping your essentials close at hand. Whether you're out running errands or just lounging
+                            at
+                            home.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb22">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 18 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/cargo2.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>The Classic Black & Denim</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$6.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man rocking a classic black shirt paired
+                            with
+                            comfortable jeans, perfect for a casual day out or a relaxed evening. The sleek black shirt
+                            adds
+                            a touch of sophistication, while the jeans keep it laid-back and versatile. Ideal for any
+                            occasion, this look effortlessly combines comfort and style.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb23">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--jeans-->
+            <section class="jeans-list">
+
+
+                <!-- Product 1 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/jeans (0).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>UrbanStride</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a man confidently dressed in black jeans
+                            paired with crisp white sneakers. The combination offers a modern, casual look that is both
+                            versatile and comfortable, making it perfect for various occasions</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb24">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/jeans (1).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Casual Vibe Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$22.59</p>
+                        </div>
+                        <p class="description">This stylish image features a man dressed in casual jeans and sneakers,
+                            confidently standing in a modern retail store. The setting highlights a contemporary
+                            shopping environment, showcasing the latest trends in fashion and lifestyle.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb25">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-box above30">
+                    <img src="pic/jeans (2).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Sleek Everyday Outfit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$35.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man confidently dressed in a sleek black
+                            shirt paired with classic brown pants. The combination offers a modern yet timeless look,
+                            perfect for both casual and semi-formal occasions</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb26">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/jeans (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Timeless Denim Look</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$5.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man dressed in a crisp white shirt paired
+                            with classic blue jeans, embodying a timeless and versatile look. The white shirt offers a
+                            clean and polished appearance, making it suitable for both casual and semi-formal occasions.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb27">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/jeans (4).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Modern Everyday Look</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$19.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man confidently dressed in a classic black
+                            shirt paired with versatile blue jeans. The black shirt offers a sleek and modern look,
+                            perfect for both casual and semi-formal occasions. The blue jeans provide a comfortable fit
+                            while adding a timeless appeal, making this ensemble ideal for everyday wear or social
+                            gatherings.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb28">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/jeans (5).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Sleek Style: The Grey and Black Outfit Duo</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$24.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man confidently dressed in grey jeans
+                            paired with a sleek black shirt. The combination offers a modern and versatile look suitable
+                            for various occasions, from casual outings to semi-formal events.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb29">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-box above30">
+                    <img src="pic/jeans (6).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Apex Fit: High Rise Jeans Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$55.99</p>
+                        </div>
+                        <p class="description">Elevate your wardrobe with our high rise jeans, expertly crafted from
+                            premium denim for both comfort and style. The high waist design flatters your silhouette,
+                            providing a chic and modern look that pairs effortlessly with any top</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb2a">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-box above30">
+                    <img src="pic/jeans (7).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Elevated Casual Look</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$33.99</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a woman confidently showcasing high-rise
+                            jeans paired with a trendy cropped top. The high-rise jeans offer a flattering silhouette,
+                            accentuating the waist while providing comfort and versatility for any occasion.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb2b">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/jeans (8).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Modern Street Style Look</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$26.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a woman confidently dressed in black jeans
+                            paired with trendy white sneakers. The combination offers a modern, casual look that is both
+                            comfortable and versatile, perfect for various occasions</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb2c">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-box  above30">
+                    <img src="pic/jeans (9).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Trendsetter Crop & High-Waist</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$44.99</p>
+                        </div>
+                        <p class="description">Elevate your casual wardrobe with this stylish ensemble featuring a woman
+                            in high waist jeans paired with a chic crop top. The high waist design accentuates the
+                            waistline, offering a flattering silhouette, while the crop top adds a trendy touch, perfect
+                            for showcasing a confident look.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb2d">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/jeans (11).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Wall Lean Vibe</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$17.99</p>
+                        </div>
+                        <p class="description">Elevate your casual striking image features a man dressed in a sleek
+                            black shirt paired with vibrant green pants, exuding a modern and stylish aesthetic. Leaning
+                            casually against a wall, he embodies a relaxed yet confident demeanor, making this visual an
+                            ideal representation of contemporary fashion. The contrast between the dark top and bright
+                            bottoms highlights his fashion-forward approach, appealing to those who appreciate bold
+                            style choices</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb2e">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/jeans (12).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Sneaker Street Swagger</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$18.99</p>
+                        </div>
+                        <p class="description">Perfectly embodying urban fashion. Standing confidently on the street, he
+                            showcases a laid-back vibe that's ideal for any casual outing. Whether you're heading to a
+                            coffee shop or meeting friends, this outfit is versatile and effortlessly cool.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb2f">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 13 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/jeans (13).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Black denim</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$25.99</p>
+                        </div>
+                        <p class="description"> Striking the perfect balance between sophistication and casual comfort.
+                            The jacket adds a touch of elegance, making it suitable for both professional and social
+                            settings, while the white sneakers provide a modern twist, ensuring all-day comfort and
+                            versatility. Ideal for those who appreciate fashion-forward choices, this look is perfect
+                            for any occasion, from a casual outing to a smart-casual event.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb30">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 14 -->
+                <div class="product-box pr20-30">
+                    <img src="pic/jeans (14).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Plaid & Denim Duo</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$29.99</p>
+                        </div>
+                        <p class="description">Discover the perfect blend of comfort and style with this classic look
+                            featuring a man in a plaid shirt and jeans. The vibrant plaid pattern adds a touch of
+                            personality, while the timeless jeans provide a versatile foundation for any casual outing.
+                            Ideal for everyday wear, this outfit effortlessly combines laid-back charm with modern
+                            flair, making it a must-have for your wardrobe.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb31">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 15 -->
+                <div class="product-box above30">
+                    <img src="pic/jeans (15).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Trendy Jean Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$32.99</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a man confidently dressed in a pair of
+                            classic jeans paired with trendy sneakers. The jeans offer a perfect blend of comfort and
+                            durability, making them suitable for various casual occasions. Complementing the look, the
+                            sneakers provide a modern touch, ensuring both style and functionality. This outfit is ideal
+                            for those seeking a versatile and fashionable appearance.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb32">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 16 -->
+                <div class="product-box pr0-20">
+                    <img src="pic/jeans (16).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Blue Vibe Threads</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$18.99</p>
+                        </div>
+                        <p class="description">The combination exudes a casual yet polished look, perfect for various
+                            occasions, from relaxed outings to informal gatherings. The jeans offer comfort and
+                            versatility, while the blue shirt adds a touch of sophistication, making it an ideal choice
+                            for those who appreciate both style and ease.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb33">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 17 -->
+                <div class="product-box">
+                    <img src="pic/jeans (17).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Casual Comfort Crew</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">Elevate your casual wardrobe with this stylish beige sweatshirt, perfect
+                            for any occasion. Crafted for comfort, it pairs effortlessly with your favorite jeans,
+                            making it an ideal choice for a laid-back day out or a cozy night in. The versatile color
+                            and relaxed fit ensure you'll look effortlessly cool while staying comfortable all day long.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb34">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 18 -->
+                <div class="product-box above30">
+                    <img src="pic/jeans (18).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>UrbanStride</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$60.99</p>
+                        </div>
+                        <p class="description">Step out in style with our latest casual look featuring a man confidently
+                            rocking a pair of classic jeans and trendy sneakers. Perfect for a day out on the town, this
+                            outfit combines comfort and fashion effortlessly, making it ideal for any urban adventure.
+                            Whether you're meeting friends or exploring the city, this ensemble ensures you stay stylish
+                            and comfortable all day long.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb35">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--formal-->
+
+            <section class="formal-list">
+
+
+                <!-- Product 1 -->
+                <div class="product-box">
+                    <img src="pic/formal (1).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Blue Horizon Attire</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$23</p>
+                        </div>
+                        <p class="description">This image features a man dressed in a stylish blue shirt paired with
+                            black pants, exuding a sense of modern sophistication. The vibrant blue of the shirt
+                            contrasts elegantly with the sleek black pants, creating a balanced and polished look
+                            suitable for various occasions.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb36">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-box">
+                    <img src="pic/formal (2).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Classic Comfort Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$34</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man dressed in a blue shirt paired with
+                            grey pants, exemplifying a modern and sophisticated look. The blue shirt offers a vibrant
+                            yet professional appearance, while the grey pants provide a versatile and neutral balance.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb37">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-box">
+                    <img src="pic/formal (3).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Everyday Style Outfit</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$29</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a man confidently standing on a sidewalk,
+                            showcasing a comfortable sweater paired with tailored pants. The outfit strikes a perfect
+                            balance between casual and sophisticated, making it suitable for various occasions.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb38">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-box">
+                    <img src="pic/formal (4).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Blue Horizon Shades</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15</p>
+                        </div>
+                        <p class="description">This stylish image features a man confidently wearing a blue shirt paired
+                            with dark sunglasses, exuding a sense of sophistication and modernity. The vibrant color of
+                            the shirt complements the sleek design of the sunglasses, making it an ideal representation
+                            of contemporary fashion</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb39">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-box">
+                    <img src="pic/formal (5).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Rustic Comfort Attire</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This product features a stylish ensemble consisting of a brown shirt and
+                            matching brown pants, designed for a sophisticated yet casual look. The earthy tones provide
+                            versatility, making it suitable for various occasions, from relaxed outings to semi-formal
+                            events</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb3a">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-box">
+                    <img src="pic/formal (6).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Urban Crosswalk Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This image captures a man confidently crossing the street, dressed in a
+                            stylish blue shirt and matching pants. The vibrant color of his attire suggests a sense of
+                            calm and professionalism, making it suitable for both casual and semi-formal settings</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb3b">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-box">
+                    <img src="pic/formal (10).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Effortless Style Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This stylish outfit features a woman confidently wearing a crisp white
+                            shirt paired with chic tan pants. The combination exudes a fresh and modern aesthetic,
+                            perfect for both professional and casual settings</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb3c">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-box">
+                    <img src="pic/formal (11).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Modern Business Classic</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$36</p>
+                        </div>
+                        <p class="description">Elevate your professional wardrobe with this sophisticated ensemble
+                            featuring a woman in a stylish brown suit paired with a sleek black top. The tailored fit of
+                            the suit exudes confidence and elegance, making it perfect for business meetings or formal
+                            events.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb3d">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-box">
+                    <img src="pic/formal (12).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Elegant Attire Collection: Beige Chic Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">Elevate your professional wardrobe with this sophisticated beige suit,
+                            designed for the modern woman. Tailored to perfection, the suit features a sleek silhouette
+                            that flatters all body types, complemented by stylish heels that add a touch of elegance.
+                        </p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb3e">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-box">
+                    <img src="pic/formal (13).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Golden Aura: The Blue Suit Ensemble</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">Elevate your style with this stunning image featuring a woman in a
+                            sophisticated blue suit, complemented by exquisite gold jewelry. The ensemble exudes
+                            confidence and elegance, making it perfect for professional settings or upscale events.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb3f">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-box">
+                    <img src="pic/formal (15).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Modern Classic Attire</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$47</p>
+                        </div>
+                        <p class="description">Elevate your wardrobe with this chic ensemble featuring a woman
+                            confidently styled in vibrant green pants paired with a sophisticated camel coat. The
+                            combination of colors creates a striking contrast, perfect for both casual outings and more
+                            polished events.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb40">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-box">
+                    <img src="pic/formal (16).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Modern Sophistication Set</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$19</p>
+                        </div>
+                        <p class="description">MThis stylish ensemble features a woman confidently wearing a tailored
+                            grey blazer paired with a vibrant green shirt. The combination of the sophisticated blazer
+                            and the eye-catching shirt creates a perfect balance of professionalism and flair, making it
+                            ideal for both business meetings and casual outings</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb41">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 13 -->
+                <div class="product-box">
+                    <img src="pic/formal (17).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Urban Brew</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$23</p>
+                        </div>
+                        <p class="description">Meet your new favorite coffee companion! This stylish image features a
+                            man in a crisp white shirt and comfortable khaki pants, effortlessly holding a steaming cup
+                            of coffee. Perfect for showcasing a relaxed yet polished vibe, this visual is ideal for
+                            promoting coffee brands, lifestyle blogs, or casual fashion. Embrace the warmth and charm of
+                            everyday moments with this inviting scene.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb42">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 14 -->
+                <div class="product-box">
+                    <img src="pic/formal (18).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Verdant Attire</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$14</p>
+                        </div>
+                        <p class="description">This image features a man dressed in a stylish green shirt paired with
+                            black pants, showcasing a modern and versatile look suitable for various occasions. The
+                            vibrant green hue of the shirt adds a pop of color, while the classic black pants provide a
+                            timeless contrast, making this outfit ideal for both casual and semi-formal settings. The
+                            combination reflects a sense of confidence and fashion-forward thinking, appealing to
+                            individuals seeking to enhance their wardrobe with contemporary pieces.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb43">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 15 -->
+                <div class="product-box">
+                    <img src="pic/formal (19).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Contemporary Comfort Collection</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$9</p>
+                        </div>
+                        <p class="description">This stylish ensemble features a man dressed in a sophisticated grey
+                            sweater paired with matching pants, exuding a modern and polished look. The neutral tones of
+                            the outfit create a versatile aesthetic, suitable for both casual and semi-formal occasions.
+                            Standing confidently against a wall, the subject embodies a sense of ease and contemporary
+                            fashion, making this image an ideal representation of understated elegance.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb44">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 16 -->
+                <div class="product-box">
+                    <img src="pic/formal (20).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Smart Casual Vibes</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$7</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man dressed in a beige polo shirt paired
+                            with brown trousers, exemplifying a sophisticated yet casual look. The polo shirt offers a
+                            comfortable fit, making it suitable for various occasions, while the brown trousers add a
+                            touch of elegance. This ensemble is perfect for both social gatherings and relaxed outings,
+                            showcasing a blend of comfort and style.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb45">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 17 -->
+                <div class="product-box">
+                    <img src="pic/formal (21).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Biege&Black elegance</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$15.99</p>
+                        </div>
+                        <p class="description">This image features a man dressed in a stylish beige shirt paired with
+                            sleek black pants, embodying a modern and sophisticated look. The neutral tones of the
+                            outfit create a versatile appearance suitable for various occasions, from casual outings to
+                            more formal events. The combination of the light shirt and dark pants enhances the overall
+                            aesthetic, making it an ideal choice for individuals seeking to make a subtle yet impactful
+                            fashion statement.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb46">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 18 -->
+                <div class="product-box">
+                    <img src="pic/formal (23).jpg" alt="Product Image">
+                    <div class="product-info">
+                        <div>
+                            <h3>Smart Casual Vibes</h3><br>
+
+                            <p class="rating">Rating: ★★★☆☆</p>
+                            <p class="price">$48</p>
+                        </div>
+                        <p class="description">This stylish outfit features a man dressed in a beige polo shirt paired
+                            with brown trousers, exemplifying a sophisticated yet casual look. The polo shirt offers a
+                            comfortable fit, making it suitable for various occasions, while the brown trousers add a
+                            touch of elegance. This ensemble is perfect for both social gatherings and relaxed outings,
+                            showcasing a blend of comfort and style.</p>
+                        <button class="add-to-cart" data-id="67b2034d3888427d35aacb47">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+
+<script src="js/category.js">
+
+</script>
+
+
+</html>
